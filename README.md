@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# Q-Pros Task Manager Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a Task Manager application built using Vite, Yarn, React TypeScript, React Query, Axios, and Firebase Realtime Database. The application allows users to perform CRUD operations on tasks, providing a simple and efficient way to manage tasks in real-time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- **Vite**: A fast build tool that provides an optimized development environment.
+- **Yarn**: A package manager that helps manage project dependencies.
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **React Query**: A data-fetching library that simplifies data management in React applications.
+- **Axios**: A promise-based HTTP client for making requests to APIs.
+- **Firebase Realtime Database**: A cloud-hosted database that enables real-time data synchronization.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Create Task**: Users can create new tasks with relevant details.
+- **Read Tasks**: Users can view a list of all tasks.
+- **Update Task**: Users can edit existing tasks.
+- **Delete Task**: Users can remove tasks they no longer need.
+- **Real-Time Updates**: Changes in the database are reflected in real-time within the application.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To get started with this project, follow these steps:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Prerequisites
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Node.js (version >= 14.x)
+- Yarn (version >= 1.22)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/abdullah-yassin/q-pros-task-manager.git
+   cd q-pros-task-manager
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   yarn install
+   ```
+
+3. Start app:
+   ```bash
+   yarn dev
+   ```
