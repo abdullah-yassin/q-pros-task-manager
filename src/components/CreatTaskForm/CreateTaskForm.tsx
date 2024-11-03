@@ -158,8 +158,9 @@ const CreateTaskForm: FC<IProps> = ({
 
         <div className="actions flex w-full mt-8 gap-4">
           <button
-            type="submit"
+            type="button"
             className="bg-primary rounded-md basis-1/2 py-2"
+            onClick={() => setIsDialogOpen(false)}
           >
             Cancel
           </button>
